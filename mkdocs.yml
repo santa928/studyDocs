@@ -54,6 +54,11 @@ nav:
       - Gitとは: git-github/what-is-git.md
       - GitHubとは: git-github/what-is-github.md
       - 覚えておくコマンド: git-github/commands.md
+      - リモート同期（fetch/pull）: git-github/remote-sync.md
+      - コンフリクトとは: git-github/conflict.md
+      - 履歴を整える（rebase/squash）: git-github/history-shaping.md
+      - コミットを取り消す（revert/reset）: git-github/undo-commits.md
+      - PRの流れとCI: git-github/pr-ci-flow.md
       - 用語集（会話のため）: git-github/glossary.md
       - レビュー用語集: git-github/review-glossary.md
 
