@@ -1,0 +1,7 @@
+services:
+  docs:
+    environment:
+      - TZ=Asia/Tokyo
+      - WATCHDOG_USE_POLLING=true
+
+

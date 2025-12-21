@@ -1,0 +1,51 @@
+site_name: studyDocs
+site_description: 勉強会資料（Markdown）を GitHub Pages で公開するためのサイト
+site_url: "https://santa928.github.io/studyDocs/"
+
+repo_name: studyDocs
+repo_url: "https://github.com/santa928/studyDocs"
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+  palette:
+    - scheme: default
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+
+plugins:
+  - search:
+      lang: ja
+
+nav:
+  - はじめに: index.md
+  - ドキュメント:
+      - 要件定義書: requirements.md
+      - 仕様書: specification.md
+      - 機能一覧: features.md
+  - 勉強テーマ:
+      - Git / GitHub: git-github/index.md
+      - AWS: aws/index.md
+      - Docker: docker/index.md
+  - Git / GitHub（詳細）:
+      - 概要: git-github/intro.md
+      - Gitとは: git-github/what-is-git.md
+      - GitHubとは: git-github/what-is-github.md
+      - 覚えておくコマンド: git-github/commands.md
+      - 用語集（会話のため）: git-github/glossary.md
+
+
