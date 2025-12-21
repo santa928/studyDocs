@@ -3,6 +3,10 @@
 勉強会資料を **Markdown** で管理し、**GitHub Pages** に公開するためのリポジトリです。  
 非エンジニアがエンジニアと対等に会話できるレベルまで理解を引き上げることを狙っています。
 
+## 公開サイト
+
+- **GitHub Pages**: `https://santa928.github.io/studyDocs/`
+
 ## できること
 
 - `docs/` 配下の Markdown をサイト化（MkDocs + Material）
