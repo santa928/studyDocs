@@ -55,5 +55,6 @@ nav:
       - GitHubとは: git-github/what-is-github.md
       - 覚えておくコマンド: git-github/commands.md
       - 用語集（会話のため）: git-github/glossary.md
+      - レビュー用語集: git-github/review-glossary.md
 
 
