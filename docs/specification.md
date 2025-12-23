@@ -16,6 +16,7 @@
   - `specification.md`: 仕様書（本ページ）
   - `features.md`: 機能一覧（Mermaid のフロー図を含む）
   - `git-github/`: Git/GitHub 学習資料
+    - `github-header.md`: GitHub の画面メニュー（ヘッダー/リポジトリタブ）の説明
 
 ## ローカル起動仕様
 

@@ -53,6 +53,7 @@ nav:
       - 概要: git-github/intro.md
       - Gitとは: git-github/what-is-git.md
       - GitHubとは: git-github/what-is-github.md
+      - GitHubのヘッダー（メニュー）: git-github/github-header.md
       - 覚えておくコマンド: git-github/commands.md
       - リモート同期（fetch/pull）: git-github/remote-sync.md
       - コンフリクトとは: git-github/conflict.md

@@ -6,9 +6,10 @@
 
 1. [Gitとは](what-is-git.md)
 2. [GitHubとは](what-is-github.md)
-3. [覚えておくコマンドと意味](commands.md)（`add` と `commit` の違いはここでも整理）
-4. [用語集（会話のため）](glossary.md)
-5. [レビュー用語集](review-glossary.md)
+3. [GitHub のヘッダー（メニュー）とは](github-header.md)（どこで何をするか迷わないため）
+4. [覚えておくコマンドと意味](commands.md)（`add` と `commit` の違いはここでも整理）
+5. [用語集（会話のため）](glossary.md)
+6. [レビュー用語集](review-glossary.md)
 
 ## 会話で詰まりやすいトピック
 

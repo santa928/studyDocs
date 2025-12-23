@@ -35,6 +35,7 @@ docker compose up
 - Git/GitHub 初学者向け:
   - `docs/git-github/what-is-git.md`
   - `docs/git-github/what-is-github.md`
+  - `docs/git-github/github-header.md`
   - `docs/git-github/commands.md`
   - `docs/git-github/glossary.md`
 
