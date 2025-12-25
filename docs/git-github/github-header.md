@@ -10,20 +10,123 @@
     GitHub のメニュー表示は **権限**、**リポジトリ設定**、**有効化している機能（Discussions/Wiki 等）**で変わります。  
     ここでは「よく見る代表例」を “役割” で整理します。
 
+## 0. 「スクショのどこ？」を先に一致させる（おすすめ）
+
+文章だけだと「どれがどれ？」になりやすいので、まずは **自分の画面のスクショ**に番号（ピン）を重ねて一致させます。
+
+### スクショ（この資料リポジトリ内）
+
+- 例として、この資料には **GitHub 公開リポジトリ（ログイン前）**のスクショを同梱しています
+  - `docs/assets/images/github-global-header.png`（GitHub 全体ヘッダー）
+  - `docs/assets/images/github-repo-tabs.png`（リポジトリのタブ列）
+
+!!! tip
+    自分のアカウント画面（ログイン後）に合わせたい場合は、上の2ファイルを **自分のスクショで置き換えて**OKです。  
+    画像のサイズやダークモード等で位置が変わるので、後述の `left/top`（%）を微調整してください。
+
+### 番号（ピン）の位置を調整する方法
+
+`docs/git-github/github-header.md` の中にある `style="left: XX%; top: YY%;"` を編集すると、番号の位置を動かせます（% は画像の左上を基準）。
+
 ## 1. GitHub 全体のヘッダー（github.com の上部）
 
 GitHub を開いたとき、どのページでも上部に出やすいメニューです（UI は変わることがあります）。
 
-- **検索（Search）**: リポジトリ/コード/Issue/PR などを横断検索する
-- **Pull requests**: 自分が関わる PR（レビュー待ち、自分の作った PR など）を一覧で見る
-- **Issues**: 自分が関わる Issue（割り当て、メンションなど）を一覧で見る
-- **Notifications**: メンション・レビュー依頼・CI 失敗などの通知をまとめて見る
-- **New（＋）**: 新規リポジトリ作成などの作成系導線（表示されない場合もある）
-- **プロフィールメニュー（アイコン）**: 設定、Organizations、Your repositories など自分周りの導線
+### スクショで見る（番号付き）
+
+<div class="img-overlay compact">
+  <div class="img-overlay-canvas">
+    <img src="../../assets/images/github-global-header.png" alt="GitHub 全体ヘッダー（スクリーンショット）">
+    <span class="pin" style="left: 2.6%; top: 42%;">1</span>
+    <span class="pin" style="left: 22%; top: 42%;">2</span>
+    <span class="pin" style="left: 68%; top: 42%;">3</span>
+    <span class="pin" style="left: 86.2%; top: 42%;">4</span>
+    <span class="pin" style="left: 92.2%; top: 42%;">5</span>
+    <span class="pin" style="left: 97.4%; top: 42%;">6</span>
+  </div>
+  <div class="caption">図1: GitHub 全体ヘッダー（ログイン前の例）。※番号位置は必要なら調整してください。</div>
+</div>
+
+| 番号 | 画面上の場所 | 役割（何をする？） |
+| --- | --- | --- |
+| 1 | GitHub ロゴ | GitHub のトップ（ホーム）へ戻る |
+| 2 | グローバルナビ（Platform / Solutions …） | GitHub の機能やプラン情報へ移動（ログイン前に出やすい） |
+| 3 | 検索（Search or jump to…） | リポジトリ/コード/Issue/PR を横断検索 |
+| 4 | Sign in | ログイン |
+| 5 | Sign up | アカウント作成 |
+| 6 | Appearance settings | 表示テーマ（ダーク/ライトなど）を切り替える |
+
+### 文章での補足（最小）
+
+!!! note
+    ログイン後のヘッダーは「Pull requests」「Issues」「Notifications」「プロフィール」などが出て **構成が変わる**ことがあります。  
+    迷ったら、この章のやり方で **自分のスクショに置き換えて番号を貼る**のが一番確実です。
+
+## 1.5. GitHub 全体ヘッダー（ログイン後版：あなたの画面に合わせる）
+
+ログイン後は、上部ヘッダーに **Pull requests / Issues / Notifications / ＋ / プロフィール** などが出ます。  
+この部分は **アカウントでログインが必要**なので、あなたの環境のスクショを使って合わせます（この資料には同梱していません）。
+
+### 用意するスクショ
+
+- `docs/assets/images/github-global-header-logged-in.png`
+
+### ピンのテンプレ（スクショを置いたら、このブロックを使う）
+
+（※そのまま貼ってOK。`left/top` はあなたのスクショに合わせて調整してください）
+
+```html
+<div class="img-overlay compact">
+  <div class="img-overlay-canvas">
+    <img src="../../assets/images/github-global-header-logged-in.png" alt="GitHub 全体ヘッダー（ログイン後のスクリーンショット）">
+    <span class="pin" style="left: 55%; top: 42%;">1</span> <!-- Pull requests -->
+    <span class="pin" style="left: 62%; top: 42%;">2</span> <!-- Issues -->
+    <span class="pin" style="left: 70%; top: 42%;">3</span> <!-- Notifications -->
+    <span class="pin" style="left: 86%; top: 42%;">4</span> <!-- ＋（New） -->
+    <span class="pin" style="left: 94%; top: 42%;">5</span> <!-- プロフィール -->
+  </div>
+  <div class="caption">図1.5: GitHub 全体ヘッダー（ログイン後の例）。※番号位置はあなたのスクショに合わせて調整してください。</div>
+</div>
+```
+
+### 対応表（ログイン後でよく使うもの）
+
+| 番号 | 画面上の場所 | 役割（何をする？） |
+| --- | --- | --- |
+| 1 | Pull requests | 自分が関わる PR（レビュー待ち/自分のPRなど）を一覧で見る |
+| 2 | Issues | 自分が関わる Issue を一覧で見る |
+| 3 | Notifications | メンション/レビュー依頼/CI 失敗などの通知を見る |
+| 4 | New（＋） | 新規作成（リポジトリ作成等）。環境により出ないこともある |
+| 5 | プロフィール（アイコン） | 設定、Organizations、Your repositories など自分周り |
 
 ## 2. リポジトリのヘッダー（リポジトリ上部のタブ）
 
 リポジトリを開いたときに出る「タブ群」です。チーム開発でよく使うのはこの領域です。
+
+### スクショで見る（番号付き）
+
+<div class="img-overlay compact">
+  <div class="img-overlay-canvas">
+    <img src="../../assets/images/github-repo-tabs.png" alt="GitHub リポジトリのタブ（スクリーンショット）">
+    <span class="pin" style="left: 4.6%; top: 40%;">1</span>
+    <span class="pin" style="left: 13.2%; top: 40%;">2</span>
+    <span class="pin" style="left: 26.1%; top: 40%;">3</span>
+    <span class="pin" style="left: 35.5%; top: 40%;">4</span>
+    <span class="pin" style="left: 44.8%; top: 40%;">5</span>
+  </div>
+  <div class="caption">図2: リポジトリのタブ列（例）。※リポジトリによりタブは増減します。</div>
+</div>
+
+| 番号 | タブ | 役割（何をする？） |
+| --- | --- | --- |
+| 1 | Code | ファイル/ブランチ/README の入口 |
+| 2 | Issues | タスク/バグ/相談をチケットとして管理 |
+| 3 | Pull requests | 変更提案（差分）をレビューして取り込む |
+| 4 | Actions | CI/CD（テストや自動化）の実行履歴を見る |
+| 5 | Projects | Issue/PR をまとめて進捗ボードで管理 |
+
+!!! note
+    リポジトリによっては **Wiki / Security / Insights** など、ここに載っていないタブも表示されます（後ろの節で説明します）。
 
 ### Code
 

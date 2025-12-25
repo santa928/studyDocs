@@ -21,6 +21,28 @@ docker compose up
 
 起動後にブラウザで `http://localhost:8000` を開きます。
 
+!!! note
+    `mkdocs.yml` の `site_url` 設定の都合で、ローカルでも `/studyDocs/` 配下にリダイレクトされることがあります。  
+    その場合は `http://localhost:8000/studyDocs/` を開いてください。
+
+## 反映されないとき（よくある原因）
+
+- **`mkdocs.yml` を変更した**（例: `extra_css` / `nav` / `theme` など）
+  - **MkDocs の再起動が必要**なことがあります  
+  - 対処:
+
+```bash
+# いったん止めて（Ctrl + C）→ 再起動
+docker compose up
+
+# もしくは別ターミナルで
+docker compose restart docs
+```
+
+- **CSS/画像が変わったのに見た目が変わらない**
+  - ブラウザキャッシュの可能性があります
+  - 対処: **ハードリロード**（Mac: `Shift + Command + R`）
+
 ## 公開（GitHub Pages）
 
 1. GitHub のリポジトリ設定で Pages を有効化  
