@@ -10,23 +10,13 @@
     GitHub のメニュー表示は **権限**、**リポジトリ設定**、**有効化している機能（Discussions/Wiki 等）**で変わります。  
     ここでは「よく見る代表例」を “役割” で整理します。
 
-## 0. 「スクショのどこ？」を先に一致させる（おすすめ）
+## 0. 「どれがどれ？」を番号で一致させる（おすすめ）
 
-文章だけだと「どれがどれ？」になりやすいので、まずは **自分の画面のスクショ**に番号（ピン）を重ねて一致させます。
-
-### スクショ（この資料リポジトリ内）
-
-- 例として、この資料には **GitHub 公開リポジトリ（ログイン前）**のスクショを同梱しています
-  - `docs/assets/images/github-global-header.png`（GitHub 全体ヘッダー）
-  - `docs/assets/images/github-repo-tabs.png`（リポジトリのタブ列）
+文章だけだと「どれがどれ？」になりやすいので、この章では **番号付きの図**で「画面上の場所」と「役割」を対応させます。
 
 !!! tip
-    自分のアカウント画面（ログイン後）に合わせたい場合は、上の2ファイルを **自分のスクショで置き換えて**OKです。  
-    画像のサイズやダークモード等で位置が変わるので、後述の `left/top`（%）を微調整してください。
-
-### 番号（ピン）の位置を調整する方法
-
-`docs/git-github/github-header.md` の中にある `style="left: XX%; top: YY%;"` を編集すると、番号の位置を動かせます（% は画像の左上を基準）。
+    あなたの GitHub 画面と見た目が違っても大丈夫です。  
+    **同じ名前（例: Issues / Pull requests / Notifications）**を探す、で迷いが減ります。
 
 ## 1. GitHub 全体のヘッダー（github.com の上部）
 
@@ -59,45 +49,17 @@ GitHub を開いたとき、どのページでも上部に出やすいメニュ�
 ### 文章での補足（最小）
 
 !!! note
-    ログイン後のヘッダーは「Pull requests」「Issues」「Notifications」「プロフィール」などが出て **構成が変わる**ことがあります。  
-    迷ったら、この章のやり方で **自分のスクショに置き換えて番号を貼る**のが一番確実です。
+    ログイン後のヘッダーは「Pull requests」「Issues」「Notifications」「プロフィール」などが出て **構成が変わる**ことがあります。
 
-## 1.5. GitHub 全体ヘッダー（ログイン後版：あなたの画面に合わせる）
+## 1.5. ログイン後によく見るメニュー（場所は環境で変わる）
 
-ログイン後は、上部ヘッダーに **Pull requests / Issues / Notifications / ＋ / プロフィール** などが出ます。  
-この部分は **アカウントでログインが必要**なので、あなたの環境のスクショを使って合わせます（この資料には同梱していません）。
+ログイン後は、上部ヘッダーに次のようなメニューが出ることが多いです（場所や並びは変わります）。
 
-### 用意するスクショ
-
-- `docs/assets/images/github-global-header-logged-in.png`
-
-### ピンのテンプレ（スクショを置いたら、このブロックを使う）
-
-（※そのまま貼ってOK。`left/top` はあなたのスクショに合わせて調整してください）
-
-```html
-<div class="img-overlay compact">
-  <div class="img-overlay-canvas">
-    <img src="../../assets/images/github-global-header-logged-in.png" alt="GitHub 全体ヘッダー（ログイン後のスクリーンショット）">
-    <span class="pin" style="left: 55%; top: 42%;">1</span> <!-- Pull requests -->
-    <span class="pin" style="left: 62%; top: 42%;">2</span> <!-- Issues -->
-    <span class="pin" style="left: 70%; top: 42%;">3</span> <!-- Notifications -->
-    <span class="pin" style="left: 86%; top: 42%;">4</span> <!-- ＋（New） -->
-    <span class="pin" style="left: 94%; top: 42%;">5</span> <!-- プロフィール -->
-  </div>
-  <div class="caption">図1.5: GitHub 全体ヘッダー（ログイン後の例）。※番号位置はあなたのスクショに合わせて調整してください。</div>
-</div>
-```
-
-### 対応表（ログイン後でよく使うもの）
-
-| 番号 | 画面上の場所 | 役割（何をする？） |
-| --- | --- | --- |
-| 1 | Pull requests | 自分が関わる PR（レビュー待ち/自分のPRなど）を一覧で見る |
-| 2 | Issues | 自分が関わる Issue を一覧で見る |
-| 3 | Notifications | メンション/レビュー依頼/CI 失敗などの通知を見る |
-| 4 | New（＋） | 新規作成（リポジトリ作成等）。環境により出ないこともある |
-| 5 | プロフィール（アイコン） | 設定、Organizations、Your repositories など自分周り |
+- **Pull requests**: 自分が関わる PR（レビュー待ち/自分のPRなど）を一覧で見る
+- **Issues**: 自分が関わる Issue を一覧で見る
+- **Notifications**: メンション/レビュー依頼/CI 失敗などの通知を見る
+- **New（＋）**: 新規作成（リポジトリ作成等）。環境により出ないこともある
+- **プロフィール（アイコン）**: 設定、Organizations、Your repositories など自分周り
 
 ## 2. リポジトリのヘッダー（リポジトリ上部のタブ）
 

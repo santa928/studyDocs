@@ -9,18 +9,10 @@
 - [AWS](aws/index.md)
 - [Docker](docker/index.md)
 
-## 運用ドキュメント
+## 運営者向け（作成者向け）ドキュメント
 
 - [要件定義書](requirements.md)
 - [仕様書](specification.md)
 - [機能一覧](features.md)
-
-## ローカルプレビュー（Docker Compose）
-
-```bash
-docker compose up
-```
-
-起動後、ブラウザで `http://localhost:8000` を開きます。
 
 
