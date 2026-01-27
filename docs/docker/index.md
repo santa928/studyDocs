@@ -4,8 +4,8 @@
 
 - Docker が「何を解決する道具か」を一言で説明できる
 - **イメージ**と**コンテナ**の違いを会話で言い分けられる
-- Docker Compose が「なぜ便利か」を、このリポジトリの例で説明できる
-- このリポジトリを Docker でローカル起動する手順がわかる
+- Docker Compose の用途を、具体例つきで説明できる
+- Docker / Compose の基本コマンドを見ても意味が想像できる
 
 ## Dockerとは（ざっくり一言で）
 
@@ -33,40 +33,94 @@ Docker が作る「ひとまとめの実行環境」を **コンテナ**と呼�
 
 関係は「イメージからコンテナを作る（起動する）」です。
 
+## Dockerfileとは（イメージの作り方）
+
+Dockerfile は **イメージを作るためのレシピ**です。
+
+ざっくり言うと、次を順番に書きます。
+
+- どの土台（ベースイメージ）を使うか
+- どのファイルを入れるか
+- どのコマンドで起動するか
+
 ## Docker Composeとは
 
 Docker Compose は **複数のコンテナを、まとめて定義して、まとめて操作する仕組み**です。
 
-このリポジトリでは `docker-compose.yml` に `docs` サービスが定義されています。
+アプリ開発では「Webアプリ」と「DB」のように、複数の要素を同時に動かすことが多いです。  
+Compose は、その「同時に動かしたいもの一式」を `docker-compose.yml` に書いておけます。
 
-- 役割: MkDocs のローカルプレビュー環境
-- ポート: `8000:8000`
-- コマンド: `mkdocs serve` 相当
+## Docker Composeの用途（なぜ便利か）
 
-## このリポジトリでの使い方（最短手順）
+Compose の便利さは、次の3つで説明できます。
 
-1. ローカルプレビューを起動する
+- 依存関係ごと動かせる  
+  Web アプリと DB などを、セットで起動できる
+- チームで再現しやすい  
+  「これを実行すれば同じ環境になる」を共有しやすい
+- 起動と停止がシンプル  
+  `up` と `down` で、まとめて扱える
+
+## Docker Composeの例（Web + DB）
+
+次は「Web（nginx）」と「DB（postgres）」をまとめて動かす最小例です。
+
+```yaml
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: example
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
+```
+
+この例のポイントです。
+
+- `services` に「一緒に動かしたいもの」を並べる
+- `ports` で「ホスト:コンテナ」をつなぐ
+- `volumes` でデータを残せるようにする（DB で特に大事）
+
+## Docker Composeの基本コマンド（会話に出る順）
+
+まずは次の5つだけで十分です。
 
 ```bash
+# 起動（フォアグラウンド）
 docker compose up
+
+# 起動（バックグラウンド）
+docker compose up -d
+
+# 停止と削除（まとめて片付け）
+docker compose down
+
+# ログを追う
+docker compose logs -f
+
+# 起動中の一覧を見る
+docker compose ps
 ```
 
-起動後にブラウザで `http://localhost:8000` を開きます。  
-`/studyDocs/` にリダイレクトされる場合は `http://localhost:8000/studyDocs/` を開きます。
-
-2. `mkdocs.yml` を変えたのに反映されないときは再起動する
+余裕が出てきたら、これも便利です。
 
 ```bash
-docker compose restart docs
+# コンテナの中でコマンドを実行する（例: web の中で sh）
+docker compose exec web sh
+
+# 単発コマンドを新しいコンテナで実行して片付ける
+docker compose run --rm web nginx -v
 ```
-
-3. ビルドだけ確認したいとき（成果物を汚さない）
-
-```bash
-docker compose run --rm docs build --site-dir /tmp/mkdocs-site
-```
-
-`/tmp` 配下に出力することで、リポジトリの `site/` を直接書き換えずに確認できます。
 
 ## よく出る言葉（会話のための最小セット）
 
@@ -80,4 +134,3 @@ docker compose run --rm docs build --site-dir /tmp/mkdocs-site
 - Docker は「環境ごと再現する道具」
 - イメージは「設計図」、コンテナは「起動した実体」
 - Compose は「複数コンテナをまとめて扱う道具」
-
