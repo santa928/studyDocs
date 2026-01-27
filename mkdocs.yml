@@ -52,6 +52,16 @@ nav:
       - Git / GitHub: git-github/index.md
       - AWS: aws/index.md
       - Docker: docker/index.md
+  - Docker（詳細）:
+      - 入口: docker/index.md
+      - Dockerとは: docker/what-is-docker.md
+      - ImageとContainer: docker/image-vs-container.md
+      - Dockerfileの基本: docker/dockerfile-basics.md
+      - 単体コンテナの流れ: docker/single-container-workflow.md
+      - Dockerfileサンプル集: docker/dockerfile-samples.md
+      - Compose入門（後半戦）: docker/compose-intro.md
+      - Composeサンプル集: docker/compose-samples.md
+      - チートシート: docker/cheatsheet.md
   - Git / GitHub（詳細）:
       - 概要: git-github/intro.md
       - Gitとは: git-github/what-is-git.md
@@ -65,5 +75,4 @@ nav:
       - PRの流れとCI: git-github/pr-ci-flow.md
       - 用語集（会話のため）: git-github/glossary.md
       - レビュー用語集: git-github/review-glossary.md
-
 

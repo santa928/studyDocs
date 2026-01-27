@@ -14,6 +14,12 @@
   - Gitとは / GitHubとは / 覚えるコマンド / 用語集
   - GitHub の画面メニュー（ヘッダー/リポジトリのタブ）を「役割」で整理
   - GitHub ヘッダー解説は **スクリーンショット上に番号を重ねる**ことで「どこがどれか」を明確化
+- **学習資料（Docker）**
+  - Dockerとは / ImageとContainer / Dockerfileの基本 を段階的に整理
+  - 単体コンテナの流れ（build → run → logs）を先に理解できる導線
+  - Dockerfileサンプル集（Node.js / Python / 静的サイト）を用意
+  - Docker Compose は「後半戦」として入門とサンプルを分離
+  - 会話用チートシートで「まず何を見るか（ps / logs / exec）」を提示
 
 ## 更新フロー（Mermaid）
 
@@ -29,5 +35,4 @@ flowchart TD
   G --> H[GitHub Actionsでデプロイ]
   H --> I[GitHub Pagesで公開]
 ```
-
 
