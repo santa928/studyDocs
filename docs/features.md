@@ -20,6 +20,12 @@
   - Dockerfileサンプル集（Node.js / Python / 静的サイト）を用意
   - Docker Compose は「後半戦」として入門とサンプルを分離
   - 会話用チートシートで「まず何を見るか（ps / logs / exec）」を提示
+- **学習資料（AWS）**
+  - AWSとは / リージョン・AZ / IAM を段階的に整理
+  - VPC / Subnet / Security Group の最小セットを説明
+  - EC2 / ECS / Lambda を「運用の重さ」で比較
+  - S3 / RDS / DynamoDB の違いを整理
+  - 最小構成の例とチートシートで会話の足場を作る
 
 ## 更新フロー（Mermaid）
 
@@ -35,4 +41,3 @@ flowchart TD
   G --> H[GitHub Actionsでデプロイ]
   H --> I[GitHub Pagesで公開]
 ```
-

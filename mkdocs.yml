@@ -62,6 +62,16 @@ nav:
       - Compose入門（後半戦）: docker/compose-intro.md
       - Composeサンプル集: docker/compose-samples.md
       - チートシート: docker/cheatsheet.md
+  - AWS（詳細）:
+      - 入口: aws/index.md
+      - AWSとは: aws/what-is-aws.md
+      - リージョンとAZ: aws/regions-and-az.md
+      - IAM（権限）: aws/iam-basics.md
+      - ネットワークの基本: aws/networking-basics.md
+      - コンピュートの基本: aws/compute-basics.md
+      - データの基本: aws/data-basics.md
+      - 最小構成の例: aws/architecture-sample.md
+      - チートシート: aws/cheatsheet.md
   - Git / GitHub（詳細）:
       - 概要: git-github/intro.md
       - Gitとは: git-github/what-is-git.md
@@ -75,4 +85,3 @@ nav:
       - PRの流れとCI: git-github/pr-ci-flow.md
       - 用語集（会話のため）: git-github/glossary.md
       - レビュー用語集: git-github/review-glossary.md
-
