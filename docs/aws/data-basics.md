@@ -38,3 +38,10 @@
 会話の言い方:
 
 - 「DynamoDBは“アクセスに強いDB”」
+
+## さらに詳しく知りたい人向け
+
+- [S3（ファイル置き場）](s3.md)
+- [RDS（リレーショナルDB）](rds.md)
+- [DynamoDB（NoSQL）](dynamodb.md)
+- [RDSとDynamoDBの違い（NoSQLって何？）](rds-vs-dynamodb.md)

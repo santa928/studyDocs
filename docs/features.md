@@ -23,8 +23,10 @@
 - **学習資料（AWS）**
   - AWSとは / リージョン・AZ / IAM を段階的に整理
   - VPC / Subnet / Security Group の最小セットを説明
+  - Route 53 / ALB を追加し、ドメイン〜入口の理解を補強
   - EC2 / ECS / Lambda を「運用の重さ」で比較
   - S3 / RDS / DynamoDB の違いを整理
+  - 各サービスの専用ページで詳細を補強（RDSとDynamoDB比較を含む）
   - 最小構成の例とチートシートで会話の足場を作る
 
 ## 更新フロー（Mermaid）

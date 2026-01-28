@@ -67,9 +67,22 @@ nav:
       - AWSとは: aws/what-is-aws.md
       - リージョンとAZ: aws/regions-and-az.md
       - IAM（権限）: aws/iam-basics.md
+      - よくあるプロダクトのAWS一覧: aws/product-services.md
       - ネットワークの基本: aws/networking-basics.md
+      - VPC: aws/vpc.md
+      - Subnet: aws/subnet.md
+      - Security Group: aws/security-group.md
+      - Route 53: aws/route53.md
+      - ALB: aws/alb.md
       - コンピュートの基本: aws/compute-basics.md
+      - EC2: aws/ec2.md
+      - ECS: aws/ecs.md
+      - Lambda: aws/lambda.md
       - データの基本: aws/data-basics.md
+      - S3: aws/s3.md
+      - RDS: aws/rds.md
+      - DynamoDB: aws/dynamodb.md
+      - RDSとDynamoDBの違い: aws/rds-vs-dynamodb.md
       - 最小構成の例: aws/architecture-sample.md
       - チートシート: aws/cheatsheet.md
   - Git / GitHub（詳細）:
