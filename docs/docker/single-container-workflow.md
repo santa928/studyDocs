@@ -56,6 +56,7 @@ docker logs -f my-app
 
 ```bash
 # 何が起きるか: 手元の public/ をコンテナ内に読み取り専用で見せる
+# :ro = read only（コンテナからは書き換えできない）
 docker run --name my-nginx -p 8080:80 \
   -v "$(pwd)/public:/usr/share/nginx/html:ro" \
   -d nginx:alpine

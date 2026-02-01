@@ -12,11 +12,11 @@
 2. [リージョンとAZ（場所の考え方）](regions-and-az.md)
 3. [IAM（権限の考え方）](iam-basics.md)
 4. [よくあるプロダクトを成立させるAWSサービス一覧](product-services.md)
-4. [ネットワークの基本（VPC / Subnet / SG）](networking-basics.md)
-5. [コンピュートの基本（EC2 / ECS / Lambda）](compute-basics.md)
-6. [データの基本（S3 / RDS / DynamoDB）](data-basics.md)
-7. [最小構成の例（Webアプリ）](architecture-sample.md)
-8. [AWS チートシート（会話用）](cheatsheet.md)
+5. [ネットワークの基本（VPC / Subnet / SG）](networking-basics.md)
+6. [コンピュートの基本（EC2 / ECS / Lambda）](compute-basics.md)
+7. [データの基本（S3 / RDS / DynamoDB）](data-basics.md)
+8. [最小構成の例（Webアプリ）](architecture-sample.md)
+9. [AWS チートシート（会話用）](cheatsheet.md)
 
 ## 最短まとめ（3行）
 

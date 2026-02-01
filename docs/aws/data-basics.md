@@ -10,7 +10,7 @@
 
 - S3: ファイル置き場（画像やPDFなど）
 - RDS: ふつうのデータベース（表で管理）
-- DynamoDB: スケールしやすいデータベース（NoSQL）
+- DynamoDB: スケールしやすいデータベース（NoSQL＝表に縛られない設計。詳しくは [RDSとDynamoDBの違い](rds-vs-dynamodb.md)）
 
 ## S3（ファイルの置き場）
 

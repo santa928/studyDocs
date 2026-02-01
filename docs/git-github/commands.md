@@ -61,6 +61,8 @@ git diff --staged
 git log --oneline --decorate --graph --all
 ```
 
+何が起きるか: 履歴を1行ずつ表示し、ブランチの分岐をグラフで見られる。`--all` で全ブランチが対象になる。
+
 ## GitHubとセットで出てくるコマンド（最低限）
 
 ### `git clone`（リポジトリをコピーして持ってくる）
