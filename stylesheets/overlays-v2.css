@@ -1,0 +1,67 @@
+.img-overlay {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.img-overlay-canvas {
+  position: relative;
+  display: block;
+  max-width: 100%;
+}
+
+.img-overlay-canvas img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.img-overlay-canvas .pin {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(220, 38, 38, 0.95); /* red */
+  border: 2px solid rgba(255, 255, 255, 0.95);
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  user-select: none;
+}
+
+.img-overlay.compact .img-overlay-canvas .pin {
+  width: 22px;
+  height: 22px;
+  font-size: 12px;
+  line-height: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22);
+}
+
+.img-overlay-canvas .pin-label {
+  position: absolute;
+  transform: translate(8px, -50%);
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(17, 24, 39, 0.92); /* slate */
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.img-overlay .caption {
+  margin-top: 8px;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+.img-overlay.compact .caption {
+  margin-top: 10px;
+}
+
+
